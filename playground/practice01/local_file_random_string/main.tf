@@ -1,9 +1,9 @@
 resource "local_file" "random_file" {
-  filename              = var.filename
-  content               = random_string.random.result
-  directory_permission  = var.directory_permission
-  file_permission       = var.file_permission
-  depends_on = [random_string.random]
+  filename             = var.filename
+  content              = random_string.random.result
+  directory_permission = var.directory_permission
+  file_permission      = var.file_permission
+  depends_on           = [random_string.random]
 }
 
 resource "random_string" "random" {
