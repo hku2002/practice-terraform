@@ -15,3 +15,9 @@ variable "file_permission" {
   default     = "0755"
   description = "파일 권한"
 }
+
+variable "environment" {
+  type        = string
+  default     = "local"
+  description = "환경(local, dev, stg, prod)"
+}
